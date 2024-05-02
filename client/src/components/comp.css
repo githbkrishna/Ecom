@@ -138,6 +138,19 @@ nav .icons i {
   border-radius: 5px;
 }
 
+.mainsearchinp{
+  width: 20%;
+  height: 2.3rem;
+  padding-left: 10px;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid rgb(0, 26, 255);
+}
+
+nav input:focus{
+  border-color: rgb(0, 132, 255);
+}
 
 
 

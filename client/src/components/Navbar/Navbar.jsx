@@ -66,7 +66,7 @@ function Navbar({ search , setsearch }) {
         <li><Link to="/kids">Kids</Link></li>
       </ul>
 
-      <input type="text" search={search} onChange={(e)=>setsearch(e.target.value)}/>
+      <input className="mainsearchinp" type="text" search={search} onChange={(e)=>setsearch(e.target.value)}/>
 
       <div className="ham" onClick={()=>{setham(!ham)}}>
         {
