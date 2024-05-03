@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import { Add } from "../redux/Actions";
 import { Link } from "react-router-dom";
 
-const Mens = () => {
+const Mens = ({search}) => {
   console.log(mensdata);
 
   // console.log(womensdata);
@@ -21,20 +21,20 @@ const Mens = () => {
 
   const dispatch = useDispatch();
 
-  // console.log(search , "from women.jsx");
-  // let searchdata = womensdata.filter((val) =>
-  //   val.pname.toLowerCase().includes(search.toLowerCase())
-  // );
+  // console.log(search , "from men.jsx");
+  let searchdata = mensdata.filter((val) =>
+    val.pname.toLowerCase().includes(search.toLowerCase())
+  );
   // console.log(search);
 
   return (
     <div>
-      <h1>mens</h1>
+      <h1>Check Latest Mens Wear</h1>
 
       <div className="womenbox">
         {
-          // searchdata.map((val) => {
-          mensdata.map((val) => {
+          // mensdata.map((val) => {
+          searchdata.map((val) => {
             return (
               <div className="womenboxes" key={val.id}>
                 <div>

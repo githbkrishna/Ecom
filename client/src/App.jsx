@@ -25,7 +25,7 @@ function App() {
       <Routes>
         
         <Route path="/" element={<Home/>}/>
-        <Route path="/mens" element={<Mens/>}/>
+        <Route path="/mens" element={<Mens search={search}/>}/>
         <Route path="/womens" element={<Womens search={search}/>}/>
 
         <Route path="/womens/cartdetails/:id" element={<Cartdetails/>}/>

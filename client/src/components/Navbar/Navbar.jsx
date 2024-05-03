@@ -7,6 +7,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Remove } from '../redux/Actions';
+import logo from '../../assets/logo.png'
 
 function Navbar({ search , setsearch }) {
 
@@ -58,12 +59,13 @@ function Navbar({ search , setsearch }) {
   return (
     <nav>
       <div className="logo" onClick={()=>navigate("/")}>
-        <h2>Ecom</h2>
+        <h2>Ecom </h2>
+        <img src={{logo}} alt="" style={{width:"200px"}} />
       </div>
       <ul className={ham ? "menus menuopen" : "menus"}>
         <li><Link to="/mens">Mens</Link></li>
         <li><Link to="/womens">Womens</Link></li>
-        <li><Link to="/kids">Kids</Link></li>
+        {/* <li><Link to="/kids">Kids</Link></li> */}
       </ul>
 
       <input className="mainsearchinp" type="text" search={search} onChange={(e)=>setsearch(e.target.value)}/>
@@ -140,7 +142,7 @@ function Navbar({ search , setsearch }) {
                     <div>
                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1--q9p_-ov0WOWeeBAJ-Zdi_Bwny2Z2_79w&usqp=CAU" alt="" />
                     </div>
-                    <button className='btn'>Add to Cart</button>
+                    <button className='btn'><Link to="/">Add to Cart</Link></button>
                 </div>
               }
 

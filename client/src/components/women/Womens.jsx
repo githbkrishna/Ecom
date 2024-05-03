@@ -29,7 +29,7 @@ const Womens = ({search}) => {
   return (
     <div>
       
-      <h1>womens</h1>
+      <h1>Check Latest Womens Wear</h1>
 
       <div className='womenbox'>
         {

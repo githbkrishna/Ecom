@@ -14,7 +14,7 @@ const Section1 = () => {
                 <div className="home_label ">
                     <p>A specialist label creating luxury essentials. Ethically crafted<br/>with an unwavering commitment to exceptional quality.</p>
                 </div>
-                <button><a href="#sellers">SHOP NOW</a><i className='bx bx-right-arrow-alt'></i></button>
+                <button><a href="/mens">SHOP NOW</a><i className='bx bx-right-arrow-alt'></i></button>
                 <div className="home_social_icons">
                     <a href="#"><i className='bx bxl-facebook'></i></a>
                     <a href="#"><i className='bx bxl-twitter'></i></a>
