@@ -5,7 +5,8 @@
 }
 
 body{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Playfair Display', serif;
+  overflow-x: hidden;
 }
 
 .btn {

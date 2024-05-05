@@ -31,11 +31,11 @@ const Womens = ({search}) => {
       
       <h1>Check Latest Womens Wear</h1>
 
-      <div className='womenbox'>
+      <div className='products'>
         {
           searchdata.map((val)=>{
             return(
-              <div className='womenboxes' key={val.id}>
+              <div className='productbox' key={val.id}>
                 <div>
                 <img src={val.imgurl} alt="" />
                 {/* <Link to={`/womens/cartdetails/${val.id}`}><img src={val.imgurl} alt="" /></Link> */}

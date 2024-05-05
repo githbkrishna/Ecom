@@ -11,6 +11,7 @@ import Cartdetails from "./components/women/Cartdetails"
 import { useState } from "react"
 import Menscartdetails from "./components/men/Menscartdetails"
 import StepperMain from "./components/stepper/StepperMain"
+import SpeedDial from './components/speedDial/SpeedDial'
 
 function App() {
 
@@ -35,6 +36,8 @@ function App() {
         <Route path="/checkout" element={<StepperMain/>}/>
 
       </Routes>
+
+      <SpeedDial/>
 
     </div>
   )

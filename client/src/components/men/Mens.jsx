@@ -31,12 +31,12 @@ const Mens = ({search}) => {
     <div>
       <h1>Check Latest Mens Wear</h1>
 
-      <div className="womenbox">
+      <div className="products">
         {
           // mensdata.map((val) => {
           searchdata.map((val) => {
             return (
-              <div className="womenboxes" key={val.id}>
+              <div className="productbox" key={val.id}>
                 <div>
                   <img src={val.imgurl} alt="" />
                   {/* <Link to={`/womens/cartdetails/${val.id}`}><img src={val.imgurl} alt="" /></Link> */}

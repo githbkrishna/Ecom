@@ -59,8 +59,8 @@ function Navbar({ search , setsearch }) {
   return (
     <nav>
       <div className="logo" onClick={()=>navigate("/")}>
+        <img src={logo} alt="" />
         <h2>Ecom </h2>
-        <img src={{logo}} alt="" style={{width:"200px"}} />
       </div>
       <ul className={ham ? "menus menuopen" : "menus"}>
         <li><Link to="/mens">Mens</Link></li>
