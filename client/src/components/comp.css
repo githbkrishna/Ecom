@@ -11,9 +11,9 @@ nav {
   height: 70px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   padding: 0 2rem;
-  /* gap: 200px; */
+  gap: 200px;
   cursor: pointer;
   /* border: 2px solid black; */
   /* box-shadow: 0 0 5px 0px black; */
