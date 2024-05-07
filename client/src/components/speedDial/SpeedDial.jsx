@@ -4,7 +4,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import '../comp.css'
 
 const actions = [
-  { icon: <WhatsAppIcon />, name: 'WhatsApp', url: 'https://wa.me/6393453759' }, // Replace 'yourphonenumber' with your actual WhatsApp number
+  { icon: <WhatsAppIcon />, name: 'WhatsApp', url: 'https://wa.me/9199999999' }, // Replace 'yourphonenumber' with your actual WhatsApp number
   // Add other speed dial actions as needed
 ];
 

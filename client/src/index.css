@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 
-body{
+body {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+
+h1{
   font-family: 'Playfair Display', serif;
-  overflow-x: hidden;
 }
 
 .btn {

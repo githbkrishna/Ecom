@@ -11,11 +11,13 @@ nav {
   height: 70px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 2rem;
+  /* gap: 200px; */
   cursor: pointer;
   /* border: 2px solid black; */
-  box-shadow: 0 0 5px 0px black;
+  /* box-shadow: 0 0 5px 0px black; */
+  overflow: hidden;
 }
 
 nav ul {
@@ -118,7 +120,6 @@ nav .icons i {
 }
 
 
-/* nav  */
 
 
 
@@ -130,8 +131,10 @@ nav .icons i {
 .cartdiv {
   display: flex;
   align-items: center;
-  justify-content: center;
-  border: 2px solid black;
+  /* justify-content: space-between; */
+  gap: 10px;
+  border: 1px solid black;
+  margin: 10px 0;
 }
 
 .cartimg {
@@ -176,6 +179,8 @@ nav input:focus{
 
 
 
+/* nav  */
+
 
 
 
@@ -195,40 +200,40 @@ div > h1 {
   grid-template-columns: repeat(3, 30%);
   align-items: center;
   justify-content: space-evenly;
-  gap: 30px 0px;
+  /* gap: 30px 0px; */
 }
 
 .productbox {
   /* width: 300px; */
   /* height: 300px; */
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 5px;
   text-align: center;
   padding: 10px;
-  /* background-color: #f7f4f6; */
-  background-color: #dcdadb;
 }
 
-.productbox:hover {
-  box-shadow: 3px 2px 2px 0px black;
-}
+/* .productbox:hover {
+  box-shadow: 0px 0px 1px 0px black;
+} */
 
 .productbox div {
   width: 100%;
   height: 280px;
   overflow: hidden;
   margin-bottom: 10px;
+  background-color: #dcdadb;
 }
 
 .productbox div img {
   width: 100%;
   height: 100%;
   transition: all 2s linear;
+  mix-blend-mode: normal;
   /* object-fit: cover; */
 }
 
 .productbox div img:hover {
-  scale: 1.1;
+  scale: 1.05;
 }
 
 .productbox p {

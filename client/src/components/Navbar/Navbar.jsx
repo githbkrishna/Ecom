@@ -130,7 +130,7 @@ function Navbar({ search , setsearch }) {
                     }
                   <h2>Total: {totl}</h2>
                   <div className="checkbtn">
-                    <Link to='/checkout' onClick={handleClose}><button>Checkout</button></Link>
+                    <Link to='/checkout' onClick={handleClose}><button className='btn'>Checkout</button></Link>
                   </div>
                 </div>
                 

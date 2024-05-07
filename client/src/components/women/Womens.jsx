@@ -42,8 +42,8 @@ const Womens = ({search}) => {
                 </div>
                 <h4><Link to="https://www.google.com/" target='black'>{val.pname}</Link></h4>
                 <p>Rating: {val.rating}</p>
-                <p>Dis price: {val.offerprice}</p>
-                <p>MRP: {val.mrp}</p>
+                <p>Dis price: ₹{val.offerprice}</p>
+                <p>MRP: ₹{val.mrp}</p>
                 <button onClick={()=>send(val)} className='btn'>Add to cart</button>
               </div>
             )
