@@ -35,7 +35,7 @@ function Navbar({ search , setsearch }) {
       setAnchorEl(null);
     };
 
-    const[ham,setham] = useState(false)
+    const[ham,setham] = useState(true)
 
     const navigate = useNavigate()
 
@@ -115,7 +115,8 @@ function Navbar({ search , setsearch }) {
                             <Link to={`/womens/cartdetails/${val.id}`}><img src={val.imgurl} alt="" /></Link>
                             </div>
                             <div className='cartcont'>
-                              <h3>title: {val.pname}</h3>
+                              {/* <h3>title: {val.pname}</h3> */}
+                              <h3>{val.pname}</h3>
                               <p>price: ₹<del>{val.mrp}</del> {val.offerprice}</p>
                               <p>quantity: {val.quantity}</p>
                               <p>size: M</p>

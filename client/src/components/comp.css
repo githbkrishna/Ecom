@@ -16,7 +16,7 @@ nav {
   gap: 200px;
   cursor: pointer;
   /* border: 2px solid black; */
-  /* box-shadow: 0 0 5px 0px black; */
+  box-shadow: 0 0 5px 0px black;
   overflow: hidden;
 }
 
@@ -51,31 +51,6 @@ nav .icons i {
   display: none;
 }
 
-@media (max-width: 600px) {
-  .menus {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    background-color: #b4abab;
-    flex-direction: column;
-    /* display: none; */
-    /* gap: 20px; */
-  }
-  .menuopen {
-    display: none;
-  }
-  nav .icons {
-    display: none;
-  }
-  nav .icons i {
-    font-size: 4vw;
-  }
-  .ham {
-    display: block;
-  }
-}
 
 .menuItem {
   width: 300px;
@@ -126,14 +101,16 @@ nav .icons i {
 .menuItem1 {
   width: 300px;
   height: 300px;
+  text-align: center;
+  padding: 0 10px;
 }
 
 .cartdiv {
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
+  /* border: 1px solid black; */
   gap: 10px;
-  border: 1px solid black;
   margin: 10px 0;
 }
 
@@ -176,6 +153,7 @@ nav .icons i {
 nav input:focus{
   border-color: rgb(0, 132, 255);
 }
+
 
 
 
@@ -330,4 +308,96 @@ div > h1 {
   bottom: 5%;
   right: 1%;
   z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  nav{
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .menus {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    flex-direction: column;
+    /* display: none; */
+    /* gap: 20px; */
+    z-index: 100;
+  }
+  .menuopen {
+    display: none;
+  }
+  nav .icons {
+    display: none;
+  }
+  nav .icons i {
+    font-size: 4vw;
+  }
+  .ham {
+    display: block;
+    font-size: 1.9rem;
+  }
+
+  .products{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+  }
+  .btn{
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 425px) {
+  nav{
+    padding: 10px;
+  }
+  .ham{
+    font-size: 1.5rem;
+  }
+  .menus {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    flex-direction: column;
+    /* display: none; */
+    /* gap: 20px; */
+    z-index: 100;
+  }
+  .menuopen {
+    display: none;
+  }
+  .products{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+  }
+  .mainsearchinp{
+    width: 200px;
+  }
+  .btn{
+    font-size: 1rem;
+  }
 }
